@@ -1,0 +1,416 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  background: url("../img/bg.jpg") #281a0c;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header .contenedor {
+  position: relative;
+  height: 700px;
+}
+
+header .contenedor .menu {
+  width: 100%;
+  text-align: right;
+}
+
+header .contenedor .menu a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+  margin: 40px 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+header .contenedor .menu a:hover {
+  text-decoration: underline;
+}
+
+header .contenedor .textos {
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  top: 50%;
+  margin-top: -52px;
+}
+
+header .contenedor .textos .nombre {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+header .contenedor .textos span {
+  font-weight: 300;
+}
+
+header .contenedor .textos h3 {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.main {
+  background: url("../img/spikes.png");
+  background-repeat: repeat;
+  max-width: 100%;
+}
+
+.main .acerca-de .contenedor {
+  overflow: visible;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main .acerca-de .contenedor .foto {
+  width: 80%;
+  position: absolute;
+  left: 0px;
+  top: -50px;
+  z-index: 0;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+}
+
+.main .acerca-de .contenedor .foto img {
+  vertical-align: top;
+  width: 100%;
+  z-index: 0;
+}
+
+.main .acerca-de .contenedor article {
+  background: #ffffff;
+  width: 40%;
+  padding: 40px;
+  z-index: 1;
+  position: relative;
+  top: 250px;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+}
+
+.main .acerca-de .contenedor article h3 {
+  font-weight: 300;
+  font-size: 40px;
+  padding: 20px 10px;
+}
+
+.main .acerca-de .contenedor article p {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.main .menu {
+  padding-top: 150px;
+  margin-bottom: 40px;
+}
+
+.main .menu .contenedor-menu {
+  border: 1px solid black;
+  background: transparent;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.main .menu .contenedor-menu .contenedor-menu2 {
+  border: 1px solid black;
+  background: transparent;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.main .menu .contenedor-menu .contenedor-menu2 article {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
+.main .menu .contenedor-menu .contenedor-menu2 article .categoria {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main .menu .contenedor-menu .contenedor-menu2 article .platillo {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 3px dotted #000000;
+  overflow: hidden;
+}
+
+.main .menu .contenedor-menu .contenedor-menu2 article .platillo .nombre {
+  font-size: 20px;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.main .menu .contenedor-menu .contenedor-menu2 article .platillo .precio {
+  font-size: 20px;
+  margin-bottom: 15px;
+  float: right;
+}
+
+.main .menu .contenedor-menu .contenedor-menu2 article .platillo .descripcion {
+  clear: both;
+}
+
+.main .menu .titulo {
+  font-weight: 300;
+  font-size: 45px;
+  text-align: center;
+  color: #132149;
+  margin: 0px 0px 40px 0px;
+}
+
+.main .galeria {
+  overflow: hidden;
+}
+
+.main .galeria .foto {
+  width: 25%;
+  float: left;
+}
+
+.main .galeria .foto img {
+  width: 100%;
+  vertical-align: top;
+  opacity: .7;
+}
+
+.main .galeria .foto img:hover {
+  opacity: 1;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.main .ubicacion {
+  background: #ffffff;
+  padding: 60px 0;
+}
+
+.main .ubicacion .contenedor {
+  margin-bottom: 100px;
+}
+
+.main .ubicacion .contenedor .titulo {
+  text-align: center;
+  font-weight: 300;
+  font-size: 40px;
+  color: #132149;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.main .ubicacion .contenedor .direccion {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.main .ubicacion .contenedor .direccion .calle {
+  margin-bottom: 15px;
+}
+
+.main .ubicacion .contenedor .horarios {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.main .ubicacion .contenedor .horarios h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main .ubicacion .contenedor .horarios .semana {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.main .ubicacion .contenedor .horarios .finde {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.main .mapa {
+  width: 100%;
+  overflow: hidden;
+}
+
+.main .mapa iframe {
+  width: 100%;
+  max-height: 600px;
+}
+
+footer {
+  background: #000000;
+}
+
+footer .copyright {
+  text-align: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+  header .contenedor {
+    position: static;
+    height: auto;
+  }
+  header .contenedor .textos {
+    position: static;
+    margin: 70px 0 150px 0;
+  }
+  header .contenedor .textos .nombre {
+    font-size: 40px;
+  }
+  header .contenedor .textos .nombre span {
+    font-size: 35px;
+  }
+  header .contenedor .textos h3 {
+    font-size: 20px;
+  }
+  header .contenedor .menu {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .main .acerca-de .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .acerca-de .contenedor .foto {
+    position: relative;
+    top: -50px;
+    width: 100%;
+  }
+  .main .acerca-de .contenedor article {
+    position: relative;
+    top: -50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .main .menu .contenedor .contenedor-menu .contenedor-menu2 article {
+    width: 100%;
+  }
+  .main .galeria .foto {
+    width: 50%;
+    padding: 0.5px;
+  }
+  .main .ubicacion .mapa {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header .contenedor {
+    position: static;
+    height: auto;
+  }
+  header .contenedor .textos {
+    position: static;
+    margin: 70px 0 150px 0;
+  }
+  header .contenedor .textos .nombre {
+    font-size: 30px;
+  }
+  header .contenedor .textos .nombre span {
+    font-size: 25px;
+  }
+  header .contenedor .textos h3 {
+    font-size: 18px;
+  }
+  header .contenedor .menu {
+    text-align: center;
+    margin-top: 20px;
+  }
+  header .contenedor .menu a {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+  }
+  .main .acerca-de .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .acerca-de .contenedor .foto {
+    position: relative;
+    width: 100%;
+    top: -50px;
+  }
+  .main .acerca-de .contenedor article {
+    position: relative;
+    top: -50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  .main .menu .contenedor .contenedor-menu .contenedor-menu2 article {
+    width: 100%;
+  }
+  .main .menu .contenedor .contenedor-menu .contenedor-menu2 article .categoria {
+    font-size: 20px;
+  }
+  .main .menu .contenedor .contenedor-menu .contenedor-menu2 article .platillo .nombre {
+    font-size: 17px;
+  }
+  .main .menu .contenedor .contenedor-menu .contenedor-menu2 article .platillo .precio {
+    font-size: 17px;
+  }
+  .main .menu .contenedor .contenedor-menu .contenedor-menu2 article .platillo .descripcion {
+    font-size: 15px;
+  }
+  .main .galeria .foto {
+    width: 50%;
+    padding: 0.5px;
+  }
+  .main .ubicacion .mapa {
+    margin: auto;
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

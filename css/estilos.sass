@@ -1,0 +1,319 @@
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: 'Source Sans Pro', sans-serif
+    font-size: 16px
+
+.contenedor
+    width: 90%
+    max-width: 1000px
+    margin: auto
+    overflow: hidden
+
+//--------------HEADER--------------//
+
+header
+    width: 100%
+    background: url('../img/bg.jpg') #281a0c
+    background-size: cover
+    background-attachment: fixed
+    background-position: center
+    
+    .contenedor
+        position: relative
+        height: 700px
+        .menu
+            width: 100%
+            text-align: right
+            a
+                color: #fff
+                font-size: 20px
+                font-weight: 300
+                display: inline-block
+                margin: 40px 20px
+                text-decoration: none
+                position: relative
+            a:hover
+                text-decoration: underline
+        .textos
+            position: absolute
+            width: 100%
+            color: #ffffff
+            top: 50%
+            margin-top: -52px
+            .nombre
+                font-weight: 600
+                font-size: 50px
+            span
+                font-weight: 300
+            h3
+                font-size: 25px
+                font-style: italic
+                font-weight: 300
+
+//----------------MAIN---------------//
+//----------------Menu---------------//
+.main
+    background: url('../img/spikes.png')
+    background-repeat: repeat
+    max-width: 100%
+    .acerca-de
+        .contenedor
+            overflow: visible
+            position: relative
+            display: flex
+            justify-content: flex-end
+            .foto
+                width: 80%
+                position: absolute
+                left: 0px
+                top: -50px
+                z-index: 0
+                box-shadow: 0px 0px 15px rgba(0,0,0,.37)
+                img 
+                    vertical-align: top
+                    width: 100%
+                    z-index: 0
+            article
+                background: #ffffff
+                width: 40%
+                padding: 40px
+                z-index: 1
+                position: relative
+                top: 250px
+                box-shadow: 0px 0px 15px rgba(0,0,0,.37)
+                
+                h3
+                    font-weight: 300
+                    font-size: 40px
+                    padding: 20px 10px
+                p
+                    font-weight: 300
+                    font-size: 17px
+                    line-height: 28px
+                    margin-bottom: 15px
+
+    .menu
+        padding-top: 150px
+        margin-bottom: 40px
+        .contenedor-menu
+            border: 1px solid black
+            background: transparent
+            overflow: hidden 
+            padding: 10px
+            .contenedor-menu2
+                border: 1px solid black
+                background: transparent
+                overflow: hidden 
+                padding: 10px
+                article
+                    width: 50%
+                    float: left
+                    padding: 20px
+                    
+                    .categoria
+                        font-size: 22px
+                        font-weight: 700
+                        text-align: center
+                        margin-bottom: 40px
+                    .platillo
+                        padding-bottom: 20px
+                        margin-bottom: 20px
+                        border-bottom: 3px dotted #000000
+                        overflow: hidden
+                        .nombre
+                            font-size: 20px
+                            margin-bottom: 15px
+                            float: left
+                        .precio
+                            font-size: 20px
+                            margin-bottom: 15px
+                            float: right
+                        .descripcion
+                            clear: both
+  
+        .titulo
+                font-weight: 300
+                font-size: 45px
+                text-align: center
+                color: #132149
+                margin: 0px 0px 40px 0px
+
+//----------------Galeria---------------//
+.main
+    .galeria
+        overflow: hidden
+        .foto
+            width: 25%
+            float: left
+            img
+                width: 100%
+                vertical-align: top
+                opacity: .7
+            img:hover
+                opacity: 1
+                transition: .3s ease
+    .ubicacion
+        background: #ffffff
+        padding: 60px 0
+        .contenedor
+            margin-bottom: 100px
+            .titulo
+                text-align: center
+                font-weight: 300
+                font-size: 40px
+                color: #132149
+                line-height: 40px
+                margin-bottom: 40px
+            .direccion
+                float: left
+                width: 50%
+                text-align: left
+                .calle
+                    margin-bottom: 15px
+            .horarios
+                float: right
+                width: 50%
+                text-align: right
+                h4
+                    text-align: center
+                    margin-bottom: 20px
+                .semana
+                    width: 50%
+                    float: left
+                    text-align: center
+                .finde
+                    width: 50%
+                    float: left
+                    text-align: center
+    .mapa
+        width: 100%
+        overflow: hidden
+        iframe
+            width: 100%
+            max-height: 600px
+
+//----------------FOOTER---------------//
+
+footer
+    background: #000000
+    .copyright
+        text-align: center
+        color: #ffffff
+
+//----------------MEDIAQUERIES---------------//
+
+@media screen and (max-width: 800px) 
+    header
+        .contenedor
+            position: static
+            height: auto
+            .textos
+                position: static
+                margin: 70px 0 150px 0 
+                .nombre
+                    font-size: 40px
+                    span
+                        font-size: 35px
+                h3
+                    font-size: 20px
+            .menu
+                text-align: center
+                margin-top: 40px
+
+    .main
+        .acerca-de
+            .contenedor
+                display: flex
+                justify-content: space-around
+                flex-direction: column
+                
+                .foto
+                    position: relative
+                    top: -50px
+                    width: 100%
+                  
+                article
+                    position: relative
+                    top: -50px
+                    margin-bottom: 50px
+                    width: 100%
+        .menu
+            .contenedor
+                .contenedor-menu
+                    .contenedor-menu2
+                        article
+                            width: 100%
+        
+        .galeria
+            .foto
+                width: 50%
+                padding: 0.5px
+        .ubicacion
+            .mapa
+                margin: auto
+                width: 80%
+
+@media screen and (max-width: 400px) 
+    header
+        .contenedor
+            position: static
+            height: auto
+            .textos
+                position: static
+                margin: 70px 0 150px 0 
+                .nombre
+                    font-size: 30px
+                    span
+                        font-size: 25px
+                h3
+                    font-size: 18px
+            .menu
+                text-align: center
+                margin-top: 20px
+                a
+                    font-size: 18px
+                    margin: 10px
+                    padding: 10px
+    .main
+        .acerca-de
+            .contenedor
+                display: flex
+                justify-content: space-around
+                flex-direction: column
+                .foto
+                    position: relative
+                    width: 100%
+                    top: -50px
+                article
+                    position: relative
+                    top: -50px
+                    margin-bottom: 50px
+                    width: 100%
+        .menu
+            .contenedor
+                .contenedor-menu
+                    .contenedor-menu2
+                        article
+                            width: 100%
+                            .categoria
+                                font-size: 20px
+                            .platillo
+                                .nombre
+                                    font-size: 17px
+                                .precio
+                                    font-size: 17px
+                                .descripcion
+                                    font-size: 15px
+                                
+        .galeria
+            .foto
+                width: 50%
+                padding: 0.5px
+        .ubicacion
+            .mapa
+                margin: auto
+                width: 80%
